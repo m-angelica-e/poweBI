@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dashboard-creditos
+    env: python
+    buildCommand: ""
+    startCommand: streamlit run app.py
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
